@@ -1,0 +1,90 @@
+body {
+  font-family: "Times New Roman", serif;
+  margin: 0;
+  padding: 10px 15px;
+  background-color: white;
+}
+
+.encabezado {
+  text-align: center;
+  width: 900px;
+}
+
+.encabezado h3 {
+  font-weight: normal;
+  margin: 8px 0;
+}
+
+.fila {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.fila label {
+  width: 240px;
+  font-size: 18px;
+}
+
+.fila input[type="text"] {
+  width: 575px;
+  padding: 6px;
+}
+
+.fila input[type="date"],
+.fila select {
+  padding: 4px;
+}
+
+input.error,
+select.error {
+  border: 2px solid red;
+}
+
+#mensaje {
+  min-height: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+#mensaje.ok { color: green; }
+#mensaje.error { color: red; }
+#mensaje.info { color: #0b5394; }
+
+.botones button {
+  font-size: 16px;
+  padding: 5px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.botones button:disabled {
+  cursor: not-allowed;
+}
+
+table {
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 3px 5px;
+}
+
+th {
+  font-size: 18px;
+}
+
+td {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+td button {
+  font-size: 13px;
+  padding: 2px 8px;
+  margin: 1px;
+  cursor: pointer;
+}

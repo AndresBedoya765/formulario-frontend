@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi primer formulario</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div class="encabezado">
+    <!-- Logo sencillo hecho con SVG (se puede cambiar por una imagen con <img src="logo.png">) -->
+    <svg width="90" height="90" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="48" fill="#0b6e3a"/>
+      <path d="M50 2 A48 48 0 0 0 2 50 Q30 40 50 2 Z" fill="#8dc63f"/>
+      <path d="M60 15 Q40 50 45 90" stroke="#ffffff" stroke-width="5" fill="none"/>
+    </svg>
+    <h3>Tecnológico de Antioquia - Institución Universitaria</h3>
+    <h3>Mi primer formulario</h3>
+  </div>
+
+  <form id="formulario" novalidate>
+
+    <div class="fila">
+      <label for="tipo_documento">Tipo de documento</label>
+      <select id="tipo_documento" name="tipo_documento">
+        <option value="">Seleccione...</option>
+        <option value="CC">Cédula de Ciudadanía</option>
+        <option value="CE">Cédula de Extranjería</option>
+        <option value="TI">Tarjeta de Identidad</option>
+        <option value="PA">Pasaporte</option>
+      </select>
+    </div>
+
+    <div class="fila">
+      <label for="numero_documento">Número de documento</label>
+      <input type="text" id="numero_documento" name="numero_documento">
+    </div>
+
+    <div class="fila">
+      <label for="nombres">Nombres</label>
+      <input type="text" id="nombres" name="nombres">
+    </div>
+
+    <div class="fila">
+      <label for="apellidos">Apellidos</label>
+      <input type="text" id="apellidos" name="apellidos">
+    </div>
+
+    <div class="fila">
+      <label for="direccion">Dirección</label>
+      <input type="text" id="direccion" name="direccion">
+    </div>
+
+    <div class="fila">
+      <label for="ciudad">Ciudad</label>
+      <select id="ciudad" name="ciudad">
+        <option value="">Seleccione...</option>
+        <option value="Medellín">Medellín</option>
+        <option value="Bello">Bello</option>
+        <option value="Envigado">Envigado</option>
+        <option value="Itagüí">Itagüí</option>
+        <option value="Sabaneta">Sabaneta</option>
+        <option value="Rionegro">Rionegro</option>
+      </select>
+    </div>
+
+    <div class="fila">
+      <label for="fecha_nacimiento">Fecha de nacimiento</label>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+    </div>
+
+    <div class="fila">
+      <label for="correo">Correo electrónico</label>
+      <input type="text" id="correo" name="correo">
+    </div>
+
+    <p id="mensaje"></p>
+
+    <div class="botones">
+      <button type="button" id="btnGuardar">Guardar</button>
+      <button type="button" id="btnActualizar" disabled>Actualizar</button>
+      <button type="button" id="btnEliminar" disabled>Eliminar</button>
+      <button type="button" id="btnLimpiar">Limpiar</button>
+    </div>
+  </form>
+
+  <table id="tabla">
+    <thead>
+      <tr>
+        <th>Tipo Documento</th>
+        <th>Número de Documento</th>
+        <th>Nombres</th>
+        <th>Apellidos</th>
+        <th>Direccion</th>
+        <th>Ciudad</th>
+        <th>Fecha de nacimiento</th>
+        <th>Email</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="cuerpoTabla"></tbody>
+  </table>
+
+  <script src="Formulario.js"></script>
+</body>
+</html>
